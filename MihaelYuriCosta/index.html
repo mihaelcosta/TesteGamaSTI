@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Gama</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="estilos.css" rel="stylesheet">
+
+</head>
+<body style="background-color: #e8e8e8;">
+    <div class="opacity">
+    <div id="borda"><header class="navbar navbar-primary" style="background-color: #333a56;" >
+       <h1 style="margin-left: 38%;color: #e8e8e8;">Teste Gama<span class="badge bg-secondary" style="color:#e8e8e8;">STI</span></h1>
+       </header>
+        <form class=" needs-validation"action="#" method="POST" id="formulario" style="width: 200px;border: 2px solid #52658f; border-radius: 30px; margin: auto;margin-top: 30px;background-color:#f7f5e6;" novalidate>
+           <div class="forms" style="margin-left: 23px; margin-bottom: 20px; margin-top: 10px;">
+            <div class="form-group" style="width: 150px;"> 
+                <label  class="form-label" style="text-align: center;"><strong>Preencha com os valores:</strong></label>
+                <input type="number" class='form-control' id="caixa1" placeholder="Fatorial" style="margin: auto;" required>
+                 
+            </div>
+            <br>
+            <div class="form-group" style="width: 150px; ">
+                <input type="number" class='form-control' id="caixa2" placeholder="Fibonacci" required>
+             </div>
+             <p id="erro0" class="alert " role="alert" style="display: none; color: red; text-align: center; width: 150px; font-size: 10px;">Coloque um número válido!</p>
+            <br><button type="button" class="btn btn-dark" id="calcular" style="margin-left: 25px; background-color: #52658f;"> Calcular </button>
+        </div> 
+        
+         
+            
+        </form>
+        <div class="wavy" id="wavy">
+          <span style="--i: 1;">L</span>
+          <span style="--i: 2;">O</span>
+          <span style="--i: 3;">A</span>
+          <span style="--i: 4;">D</span>
+          <span style="--i: 5;">I</span>
+          <span style="--i: 6;">N</span>
+          <span style="--i: 7;">G</span>
+          <span style="--i: 8;">.</span>
+          <span style="--i: 9;">.</span>
+          <span style="--i: 10;">.</span>
+        </div>
+    <div id="sumi" style="display: none;">
+        <div class="fade" id="borda2" style="border: #52658f solid 2px; width: 250px; border-radius: 30px; margin: auto; margin-top: 30px; background-color: #f7f5e6; display: none;">
+        <div class=" alert-dark fade"role="alert" style="height: 70px; width: 200px; margin: auto;border: 2px solid;border-radius: 20px;text-align: center;"id="resp"></div>
+        <button type="button" class="btn btn-dark fade" id="recarregar" style="margin-left: 27%; background-color: #52658f;">Recarregar</button>
+    </div>
+    <div class="alert alert-success alert-dismissible fade" role="alert" id="conseguiu" style="width: 500px;position: relative; margin: auto;">
+        
+        <h4 class="alert-heading">Parabéns!!</h4>
+        <p>Você conseguiu e o link para acesso é: <a href="http://gamasti.com.br/c679546q.html" class="alert-link">http://gamasti.com.br/c679546q.html</a></p>
+        <hr>
+        <p class="mb-0">Até a próxima!!</p>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" id="close"></button>
+      </div>
+    </div>  
+    </div>  
+        <script src="script.js"></script>
+   
+</div>
+</body>
+</html>
